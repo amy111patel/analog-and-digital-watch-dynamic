@@ -1,0 +1,136 @@
+.watch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.watch-face {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hour-hand {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform-origin: bottom center;
+  width: 4px;
+  height: 50px;
+  background-color: #000;
+  z-index: 3;
+}
+
+.minute-hand {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform-origin: bottom center;
+  width: 3px;
+  height: 70px;
+  background-color: #000;
+  z-index: 2;
+}
+
+.second-hand {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform-origin: bottom center;
+  width: 2px;
+  height: 80px;
+  background-color: red;
+  z-index: 1;
+  transition: transform 0.1s linear;
+  animation: rotate 60s linear infinite;
+}
+
+.watch-markings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-marking {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  font-size: 16px;
+  text-align: center;
+  transform: translateY(-90px);
+}
+
+.watch-marking:nth-child(1) {
+  transform: rotate(30deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(2) {
+  transform: rotate(60deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(3) {
+  transform: rotate(90deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(4) {
+  transform: rotate(120deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(5) {
+  transform: rotate(150deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(6) {
+  transform: rotate(180deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(7) {
+  transform: rotate(210deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(8) {
+  transform: rotate(240deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(9) {
+  transform: rotate(270deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(10) {
+  transform: rotate(300deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(11) {
+  transform: rotate(330deg) translateY(-90px);
+}
+
+.watch-marking:nth-child(12) {
+  transform: rotate(0) translateY(-90px);
+}
+
+.digital-clock {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #9b0202;
+  border: 2px solid #9b0202;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: monospace;
+  background: #fff;
+  box-shadow: 0px 0px 16px #cdcdcd;
+}
